@@ -22,7 +22,7 @@ export default class BirdControl extends cc.Component {
     }
     fly(){
         //随机目标点
-        this.targetPos = cc.v2(Math.random() * 220 - 110,185);
+        this.targetPos = cc.v2(Math.random() * 220 - 110,60);
         //如果向右飞，则翻转精灵使其看起来不那么难看
         if(this.targetPos.x > this.node.x){
             this.node.scaleX = -1;
